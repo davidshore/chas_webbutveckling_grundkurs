@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.header h1 {
+}
+
+.container {
+  display: flex;
+  background-color: antiquewhite;
+  height: 200px;
+}
+
+.nav {
+  background-color: red;
+  /* flex: 1; */
+  width: 30%;
+}
+
+.content {
+  background-color: blue;
+  /* flex: 3; */
+  width: 100%;
+}

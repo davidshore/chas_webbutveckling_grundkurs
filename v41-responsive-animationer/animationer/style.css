@@ -1,0 +1,38 @@
+.btn {
+  background-color: blueviolet;
+  padding: 12px 24px;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  max-width: 200px;
+}
+
+.box {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  transition: transform 300ms;
+}
+
+.btn:hover + .box {
+  transform: translate(200px, 0px);
+  transition: transform 300ms;
+}
+
+.parent {
+}
+
+.child {
+  background-color: blueviolet;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  transition: transform 2s;
+}
+
+.parent:hover .child {
+  transform: translate(200px, 0px);
+}

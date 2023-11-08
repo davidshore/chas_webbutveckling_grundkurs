@@ -1,0 +1,53 @@
+/*
+Viktig regel för flexbox:
+
+align-items linjerar i motstatt riktning mot
+föräldern
+
+justify-content i samma riktning
+
+*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.trafficLight {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  justify-content: space-between;
+  height: 140px;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+}
+
+.red {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.innerRed {
+  background-color: pink;
+  width: 100%;
+  height: 50%;
+}

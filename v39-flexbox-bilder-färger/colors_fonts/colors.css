@@ -1,0 +1,51 @@
+body {
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+/* HEX-FÄRGER */
+/* Blandar 3 färger: 
+rgb = röd, grön, blå
+
+första två tecknen = röd
+mellerst två tecken = grön
+sista två tecken = blå
+
+00 = ingen färg
+ff (256) = maximal färg
+*/
+
+/* RGB-FUNKTIONEN 
+Samma som hex-färger men använder vanliga siffror
+istället för hex-siffror.
+*/
+
+/* RGBA-FUNKTIONEN
+Samma som rgb-funktionen men har också alpha för
+genomskinlighet.
+*/
+
+/* HSL-FUNKTIONEN
+H = Hue (Nyans)
+S = Saturation (Mättnad)
+L = Lightness (Ljushet)
+*/
+
+.box1 {
+  /* background-color: #ff0000; */
+  /* background-color: rgb(256, 0, 0); */
+  /* background-color: rgba(256, 0, 0, 0.9); */
+  background-color: hsl(6, 70%, 60%);
+}
+
+.box2 {
+  background-color: hsl(132, 70%, 60%);
+}
+
+.box3 {
+  background-color: hsl(213, 70%, 60%);
+}

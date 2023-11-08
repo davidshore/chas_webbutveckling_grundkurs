@@ -1,0 +1,40 @@
+/* Förälder sätter grid layout för hela sidan */
+/* Använder grid-template-areas för att namnge varje
+ruta i rutnätet. */
+.mainGrid {
+  display: grid;
+  grid-template-areas:
+    "topbar topbar topbar"
+    "nav content ad"
+    "footer footer footer";
+
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 80px auto 200px;
+}
+
+/* barn-element passar med rutan topbar mha grid-area */
+.header {
+  grid-area: topbar;
+  background-color: black;
+}
+
+.nav {
+  grid-area: nav;
+  height: 400px;
+  background-color: purple;
+}
+
+.content {
+  grid-area: content;
+  background-color: pink;
+}
+
+.ad {
+  grid-area: ad;
+  background-color: blue;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: brown;
+}

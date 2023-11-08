@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 900px;
+  background-color: blueviolet;
+  justify-items: center;
+}
+
+.gridItem {
+  padding: 20px;
+  border: 1px solid black;
+  background-color: tomato;
+  border-radius: 10px;
+}
+
+.gridItem1 {
+  /* grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row: 1 / span 3; */
+  grid-column: span 3;
+}

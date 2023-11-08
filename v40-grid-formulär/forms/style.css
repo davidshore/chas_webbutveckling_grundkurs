@@ -1,0 +1,54 @@
+.container form {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 30px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+select {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+);
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  appearance: none;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+.firstName {
+}
+
+.lastName {
+}
+
+.password {
+  grid-column: 1;
+}
+
+.email {
+  grid-column: 1;
+}
+
+.message {
+  grid-column: span 2;
+}
+
+.message textarea {
+  height: 200px;
+  width: 100%;
+}
+
+.send {
+  grid-column: span 2;
+}

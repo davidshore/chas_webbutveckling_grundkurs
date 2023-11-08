@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  /*
+  border-width: 20px;
+  border-color: black;
+  border-style: solid;
+  */
+  border: 20px solid black;
+  margin: 20px;
+  padding: 10px;
+}
+
+.container {
+  display: inline-block;
+  background-color: red;
+  padding: 10px 0px 10px 20px;
+}
+
+.inner {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+}

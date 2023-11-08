@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Logga in</h2>
+    <div class="formContainer">
+      <form action="https://httpbin.org/anything" method="post">
+        <div class="firstName">
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" required />
+        </div>
+        <div class="lastName">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" required />
+        </div>
+
+        <div class="password">
+          <label for="pass">Password</label>
+          <input id="pass" name="password" type="password" required />
+        </div>
+
+        <div class="email">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="message">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="message"></textarea>
+        </div>
+
+        <div class="pet">
+          <label for="petSelect">Choose a pet</label>
+          <select name="pet" id="petSelect" required>
+            <option value="">Please choose a pet</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+          </select>
+        </div>
+
+        <div class="food">
+          <p>Choose food</p>
+          <input type="radio" value="pizza" name="food" id="Pizza" /><label
+            for="Pizza"
+            >Pizza</label
+          >
+          <input type="radio" value="pasta" name="food" id="Pasta" /><label
+            for="Pasta"
+            >Pasta</label
+          >
+          <input type="radio" value="bread" name="food" id="Bread" /><label
+            for="Bread"
+            >Bread</label
+          >
+        </div>
+
+        <div class="send">
+          <button type="submit">Skicka</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

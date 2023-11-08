@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 20px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav i {
+  margin: 10px;
+  color: green;
+}
+
+.navbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

@@ -1,0 +1,49 @@
+/* Mobile first = css utanför media queries är för mobil. */
+html {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  margin: 0px;
+  /* height: 100%; */
+  background-color: beige;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  font-size: 2rem; /* Betyder 2 * font-size i html-taggen */
+  height: 100%;
+}
+
+.container div {
+  height: 100%;
+  background-color: green;
+}
+
+.container h2 {
+  font-size: 3rem;
+  /* 3 * 16 för mobil 
+     3 * 24 för desktop
+  */
+}
+
+/* Använd min-width eller max-width */
+/* 768px är en breakpoint */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    background-color: red;
+  }
+
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    background-color: green;
+  }
+}

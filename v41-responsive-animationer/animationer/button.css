@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+.myButton + .btn {
+  background-color: red;
+}
+
+.myButton:hover + .btn {
+  background-color: blue;
+  transition: all 300ms;
+  color: white;
+}
+
+/* .btn {
+  background-color: blueviolet;
+  padding: 12px 24px;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  animation-name: test;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+} */
+
+/* @keyframes test {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+} */
+
+/* .btn:hover {
+  background-color: blue;
+  opacity: 0.7;
+  transition: all 300ms;
+} */
+
+/* .btn:hover {
+  transform: rotate(20deg);
+  transition: all 300ms;
+} */
+
+/* .menu {
+  transform: translate(-200px, 0px);
+  width: 200px;
+  height: 100vh;
+  background-color: #eee;
+  transition: transform 300ms;
+}
+
+.btn:hover + .menu {
+  transform: translate(0px, 0px);
+  transition: transform 1300ms ease-in;
+} */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="https://httpbin.org/anything" method="post">
+        <div class="firstName">
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" required />
+        </div>
+        <div class="lastName">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" required />
+        </div>
+        <div class="password">
+          <label for="pass">Password</label>
+          <input id="pass" name="password" type="password" required />
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="message">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="message"></textarea>
+        </div>
+
+        <div class="pet">
+          <label for="pet-select">Choose a pet</label>
+          <select name="pets" id="pet-select">
+            <option value="">Please choose an option</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+          </select>
+        </div>
+
+        <div class="send">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

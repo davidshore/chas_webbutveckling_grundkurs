@@ -1,0 +1,22 @@
+.myGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* repeat(3, 200px) */
+  grid-template-rows: 1fr 600px;
+  gap: 20px;
+  row-gap: 40px;
+}
+
+.gridItem {
+  border: 1px solid black;
+}
+
+.gridItem1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* grid-column: span 3; */
+  /* grid-row: span 2; */
+}
+
+.gridItem4 {
+  /* grid-column: span 2; */
+}

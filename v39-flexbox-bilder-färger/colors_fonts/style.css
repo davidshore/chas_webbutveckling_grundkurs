@@ -1,0 +1,25 @@
+body {
+  font-family: "Martian Mono", monospace;
+}
+
+.myFont {
+  font-family: "Martian Mono", monospace;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Fuzzy Bubbles";
+  src: url(Fuzzy_Bubbles/FuzzyBubbles-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fuzzy Bubbles";
+  src: url(Fuzzy_Bubbles/FuzzyBubbles-Bold.ttf);
+  font-weight: 700;
+}
+
+.myFont2 {
+  font-family: "Fuzzy Bubbles";
+  font-weight: 700;
+}
