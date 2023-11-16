@@ -2,6 +2,8 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 
+const todoList = [];
+
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
@@ -16,9 +18,12 @@ app.get("/minasidor", (req, res) => {
 
 app.post("/todos", (req, res) => {
   const data = req.body;
-  console.log(data);
+  console.log("received: ", data);
+  todoList.push(data);
+
+  console.log("in todoList: ", todoList);
 });
 
 app.listen(4001, () => {
-  console.log("Nu har vi startat på port 4000");
+  console.log("Nu har vi startat på port 4001");
 });
