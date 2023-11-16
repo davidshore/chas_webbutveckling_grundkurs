@@ -1,0 +1,6 @@
+1. Gå ignenom express
+- Ett ramverk som utökar funktionallitet i node
+- Den anropar node-funktioner i bakrunden
+- Kunna skicka och ta emot data från en webbsida
+
+2. Kolla på tester med jest
